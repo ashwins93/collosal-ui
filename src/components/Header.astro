@@ -1,0 +1,19 @@
+---
+import * as styles from "../styles/navbar.css";
+import { button } from "../styles/buttons.css";
+import Navlink from "./Navlink.astro";
+import Logo from "./Logo.astro";
+---
+
+<header class={styles.header}>
+  <Logo />
+
+  <nav class={styles.nav}>
+    <Navlink href="#">Services</Navlink>
+    <Navlink href="#">How we work</Navlink>
+    <Navlink href="#">Projects</Navlink>
+    <Navlink href="#">About</Navlink>
+  </nav>
+
+  <button class={button()}>Contact</button>
+</header>

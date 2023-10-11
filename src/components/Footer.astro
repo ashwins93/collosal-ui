@@ -1,0 +1,52 @@
+---
+import {
+  footer,
+  mutedText,
+  logoWrapper,
+  footerSectionHead,
+  footerLinks,
+} from "../styles/footer.css";
+import Logo from "./Logo.astro";
+---
+
+<footer class={footer}>
+  <div>
+    <div class={logoWrapper}>
+      <Logo />
+    </div>
+    <div class={mutedText}>Copyright &copy; 2023</div>
+  </div>
+
+  <div>
+    <div class={footerSectionHead}>Services</div>
+    <div class={footerLinks}>
+      <a href="#" class={mutedText}>Web development</a>
+      <a href="#" class={mutedText}>App development</a>
+      <a href="#" class={mutedText}>UI Design</a>
+      <a href="#" class={mutedText}>Consultation</a>
+      <a href="#" class={mutedText}>Maintenance</a>
+    </div>
+  </div>
+
+  <div>
+    <div class={footerSectionHead}>Company</div>
+    <div class={footerLinks}>
+      <a href="#" class={mutedText}>About</a>
+      <a href="#" class={mutedText}>Contact</a>
+      <a href="#" class={mutedText}>Send Quote</a>
+      <a href="#" class={mutedText}>Privacy Policy</a>
+      <a href="#" class={mutedText}>Terms of Service</a>
+      <a href="#" class={mutedText}>Jobs</a>
+    </div>
+  </div>
+
+  <div>
+    <div class={footerSectionHead}>Resources</div>
+    <div class={footerLinks}>
+      <a href="#" class={mutedText}>Support</a>
+      <a href="#" class={mutedText}>Documentation</a>
+      <a href="#" class={mutedText}>License</a>
+      <a href="#" class={mutedText}>Sitemap</a>
+    </div>
+  </div>
+</footer>
