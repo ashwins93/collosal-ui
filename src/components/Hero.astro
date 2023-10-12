@@ -1,0 +1,24 @@
+---
+import { hero, heroActions, heroText } from "../styles/hero.css";
+import { button } from "../styles/buttons.css";
+import { headingLarge, headingSmall } from "../styles/typography.css";
+---
+
+<div class={hero}>
+  <div class={headingSmall}>Client-Driven Development</div>
+  <div class={headingLarge}>
+    We Design. We Develop. We Ship. <br /> In The Same Day.
+  </div>
+  <div class={heroText}>
+    We are committed to not making clients wait. We will deliver the work as
+    quickly as possible. Even on the same day. Even so, we do not reduce the
+    quality of our work.
+  </div>
+
+  <div class={heroActions}>
+    <button class={button({ size: "large", color: "primary" })}
+      >Send Quote</button
+    >
+    <button class={button({ size: "large" })}>Learn More</button>
+  </div>
+</div>
