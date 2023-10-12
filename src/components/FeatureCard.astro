@@ -1,0 +1,20 @@
+---
+import {
+  card,
+  cardText,
+  cardTitle,
+  cardIconWrapper,
+} from "../styles/features.css";
+
+const { icon, title, description } = Astro.props;
+---
+
+<div class={card}>
+  <div class={cardIconWrapper}>
+    <img src={icon} alt={title} />
+  </div>
+  <div class={cardTitle}>{title}</div>
+  <div class={cardText}>
+    {description}
+  </div>
+</div>

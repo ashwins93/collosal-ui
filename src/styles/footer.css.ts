@@ -1,14 +1,16 @@
 import { style } from "@vanilla-extract/css";
 import { vars } from "./theme.css";
+import { container } from "./app.css";
 
-export const footer = style({
-  display: "flex",
-  maxWidth: 992,
-  padding: "50px 16px",
-  margin: "0 auto",
-  justifyContent: "space-between",
-  gap: 8,
-});
+export const footer = style([
+  container,
+  {
+    display: "flex",
+    padding: "50px 16px",
+    justifyContent: "space-between",
+    gap: 8,
+  },
+]);
 
 export const footerSectionHead = style({
   color: "#fff",

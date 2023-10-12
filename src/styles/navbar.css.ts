@@ -1,4 +1,5 @@
 import { style } from "@vanilla-extract/css";
+import { container } from "./app.css";
 
 export const logo = style({
   display: "flex",
@@ -17,13 +18,14 @@ export const nav = style({
   listStyle: "none",
 });
 
-export const header = style({
-  display: "flex",
-  justifyContent: "space-between",
-  margin: "0 auto",
-  padding: "50px 16px",
-  maxWidth: 992,
-});
+export const header = style([
+  container,
+  {
+    display: "flex",
+    justifyContent: "space-between",
+    padding: "50px 16px",
+  },
+]);
 
 export const navLink = style({
   color: "rgba(255, 255, 255, 0.80)",

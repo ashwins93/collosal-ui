@@ -1,0 +1,29 @@
+---
+import { featuresWrapper } from "../styles/features.css";
+import FeatureCard from "./FeatureCard.astro";
+
+const features = [
+  {
+    icon: "/images/figma.svg",
+    title: "Design",
+    description:
+      "The project interface will be designed first, our favorite tool is Figma.",
+  },
+  {
+    icon: "/images/code.svg",
+    title: "Develop",
+    description:
+      "Transform design and write business logic here. Choose the technology you want.",
+  },
+  {
+    icon: "/images/box.svg",
+    title: "Ship",
+    description:
+      "Transform design and write business logic here. Choose the technology you want.",
+  },
+];
+---
+
+<div class={featuresWrapper}>
+  {features.map((feature) => <FeatureCard {...feature} />)}
+</div>

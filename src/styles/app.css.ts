@@ -31,4 +31,9 @@ globalStyle("p, h1, h2, h3, h4, h5, h6", {
   overflowWrap: "break-word",
 });
 
-export const container = style({});
+export const container = style({
+  maxWidth: 1056,
+  margin: "0 auto",
+  paddingLeft: 16,
+  paddingRight: 16,
+});
